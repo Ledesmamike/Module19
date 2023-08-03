@@ -1,0 +1,177 @@
+.logo {
+  position: absolute;
+  height: 5%;
+  padding-left: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+header {
+ text-align: center;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: xx-large;
+  color: #2A2A2A;
+  text-transform: uppercase;
+}
+
+body {
+  background-image: url("../images/Smoke\ BG.jpg");
+  background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+
+  display: block;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+}
+
+li a:hover {
+  background-color: #111;
+  color: aqua;
+}
+
+.subHeading {
+text-align: center;
+border-bottom: 2px solid black;
+width: 300px;
+margin:  50px auto;
+}
+
+.heroGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+#categoryGrid {
+  margin: 0px 5px;
+  display: grid;
+  grid-template-rows: 300px 300px 300px 300px;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "uxDesign motionGraphics"
+  "uxDesign motionGraphics" 
+  "illustration branding"
+  "illustration branding";
+}
+
+#uxDesign {
+  grid-area: uxDesign;
+  background-image: url("../images/UX\ UI\ Design.jpg");
+}
+#illustration {
+  grid-row: illustration;
+  background-image: url("../images/Illustration.jpg");
+}
+#branding {
+  grid-area: branding;
+  background-image: url("../images/Branding.jpg");
+}
+#motionGraphics {
+  grid-area: motionGraphics;
+  background-image: url("../images/Motion\ Graphics.jpg");
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid aqua;
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px 0px 0px 0px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  margin: 0px 0px 0px 0px;
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  border-bottom: 5px solid aqua;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+
+footer {
+  margin: 0px 0px 0px 0px;
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+  }
+  .icons {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+  #heroGrid {
+    grid-template-areas:
+    "uxDesign illustration"
+    "branding motionGraphics";
+  }
+  #categoryGrid {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "uxDesign"
+      "illustration"
+      "branding"
+      "motionGraphics"
+    ;
+  }
+  
+}

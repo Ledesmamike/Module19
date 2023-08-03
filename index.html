@@ -16,20 +16,36 @@
 
         <h1>Projects</h1>
 
-        <section class="container">
-          <div class="slider-wrapper">
-            <div class="slider">
-              <img id="slide-1" src="./images/UX UI Design.jpg" alt="AustraliaPost Website"/>
-              <img id="slide-2" src="./images/loveoftypeposter-orig_1_orig.png" alt="Love of Type Poster"/>
-              <img id="slide-3" src="./images/retroad-nikesblancemountain_2_orig.jpg" alt="Nike SB Poster"/>
-            </div>
-            <div class="slider-nav">
-              <a href="#slide-1"></a>
-              <a href="#slide-2"></a>
-              <a href="#slide-3"></a>
-            </div>
-          </div> 
-        </section>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="./images/loveoftypeposter-orig_1_orig.png" style="width:100%">
+    <div class="text">For the Love of Type Event Poster</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="./images/challenge-1_2_orig.jpg" style="width:100%">
+    <div class="text">God of War Promotional Poster</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="./images/retroad-nikesblancemountain_2_orig.jpg" style="width:100%">
+    <div class="text">Nike SB x Lance Mountain Promotional Poster</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
           
         <section id="categoryGrid">
             <div id="uxDesign" class="categoryGridArea">
